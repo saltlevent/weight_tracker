@@ -90,6 +90,8 @@ class _RegisterPageState extends State<RegisterPage> {
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), border: Border.all(color: Colors.black12)),
                   child: TextField(
                     controller: _emailController,
+                    keyboardType: TextInputType.emailAddress,
+
                     decoration: const InputDecoration(hintText: "e-mail Adress Here.", labelText: "e-mail", border: InputBorder.none),
                     onSubmitted: (value) => null,
                   ),

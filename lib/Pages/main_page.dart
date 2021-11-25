@@ -44,10 +44,10 @@ class _MainPageState extends State<MainPage> {
 
   List<BottomNavigationBarItem> navigationBarItems(){
     return  const [
-        /*BottomNavigationBarItem(
+        BottomNavigationBarItem(
             icon: Icon(Icons.show_chart),
             label: "Home"
-        ),*/
+        ),
         BottomNavigationBarItem(
             icon: Icon(Icons.history),
             label: "History"
@@ -62,11 +62,11 @@ class _MainPageState extends State<MainPage> {
     setState(() {
       navBarIndex = index;
 
-      /*if(index == 0){
+      if(index == 0){
         pageTitle = "HOME";
-      } else */if(index == 0){
-        pageTitle = "HISTORY";
       } else if(index == 1){
+        pageTitle = "HISTORY";
+      } else if(index == 2){
         pageTitle = "USER";
       } else{
         pageTitle = "ERRoR";
@@ -75,11 +75,11 @@ class _MainPageState extends State<MainPage> {
   }
 
   Widget pageSelector(int PageNumber) {
-    /*if(PageNumber == 0){
+    if(PageNumber == 0){
       return const HomePage();
-    } else */if(PageNumber == 0){
-      return const HistoryPage();
     } else if(PageNumber == 1){
+      return const HistoryPage();
+    } else if(PageNumber == 2){
       return const UserPage();
     } else{
       return Container();
