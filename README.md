@@ -1,16 +1,9 @@
-# weight_tracker
+# Weight Tracker
 
-A new Flutter project.
+Standart bir kilo takip uygulamasıdır. Kullanıcı verilerini saklamak ve authentication için firebase kullanılmıştır. State Management için ise Getx kullanılmıştır.
+Uygulama kullanıcının seçtiği tarihe göre kilo verilerini saklamaktadır. dolayısıyla email ile üye olma ve giriş yapma sistemleri mevcuttur.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Özellikleri
+* Getx kullanılmıştır. State Management tamamen Getx elindedir
+* History bölümünde tüm kilo verileri card'lar şeklinde bulunmaktadır.
+* Firebase database'den veriler Json olarak çekilir ve OOP şeklinde kullanılır.
