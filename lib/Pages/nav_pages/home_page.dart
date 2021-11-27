@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return Container(padding: EdgeInsets.symmetric(vertical: 150,horizontal: 10), child: LineChart(flChartData()));
+    return Obx(() => Container(padding: EdgeInsets.symmetric(vertical: 150,horizontal: 10), child: LineChart(flChartData())));
   }
 
   LineChartData flChartData(){
